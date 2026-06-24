@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fafc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+        NAVBAR
+=========================== */
+
+#navbar {
+  width: 100%;
+  height: 7vw;
+  background: #1e3a8a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+#logo {
+  color: white;
+  font-size: 2.8vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.input-box {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchInput {
+  width: 65%;
+  height: 4vw;
+  padding-left: 1vw;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 1.2vw;
+}
+
+#searchInput::placeholder {
+  color: #94a3b8;
+}
+
+#searchBtn {
+  padding: 1vw 3vw;
+  border: .2vw solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-size: 1.3vw;
+  transition: 0.3s;
+}
+
+#searchBtn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* ===========================
+        LOADING
+=========================== */
+
+#loading {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  color: #1e3a8a;
+}
+
+/* ===========================
+      NEWS CONTAINER
+=========================== */
+
+#newsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+  padding: 20px;
+  margin-top: 9vw;
+}
+
+/* ===========================
+          CARD
+=========================== */
+
+.card {
+  width: 27vw;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  transition: 0.35s;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.18);
+}
+
+.newsImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.card:hover .newsImg {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  padding: 12px;
+  font-size: 1.4vw;
+  color: #0f172a;
+}
+
+.card p {
+  padding: 0 12px;
+  color: #475569;
+  font-size: 1vw;
+  line-height: 1.6;
+}
+
+.card h6 {
+  padding: 12px;
+  color: #64748b;
+  font-size: 0.9vw;
+  line-height: 1.5;
+}
+
+/* ===========================
+          FOOTER
+=========================== */
+
+.footer {
+  margin-top: 60px;
+  background: #0f172a;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  font-size: 28px;
+  color: #60a5fa;
+  margin-bottom: 15px;
+}
+
+.footer-title {
+  color: #93c5fd;
+  margin-bottom: 15px;
+}
+
+.footer-text,
+.footer-box p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.footer-box a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.footer-box a:hover {
+  color: #60a5fa;
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #334155;
+  padding-top: 20px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+
+  #navbar {
+    height: 25vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  #logo {
+    font-size: 8vw;
+  }
+
+  .input-box {
+    width: 100%;
+  }
+
+  #searchInput {
+    width: 65%;
+    height: 10vw;
+    font-size: 4vw;
+    padding-left: 3vw;
+  }
+
+  #searchBtn {
+    padding: 3vw 8vw;
+    font-size: 4vw;
+  }
+
+  #loading {
+    font-size: 8vw;
+  }
+
+  #newsContainer {
+    margin-top: 30vw;
+    gap: 6vw;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .newsImg {
+    height: 250px;
+  }
+
+  .card h3 {
+    font-size: 6vw;
+  }
+
+  .card p {
+    font-size: 4.5vw;
+  }
+
+  .card h6 {
+    font-size: 4vw;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer-box a:hover {
+    padding-left: 0;
+  }
+}

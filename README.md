@@ -51,8 +51,8 @@ Hamari-News/
 
 ## 📸 Screenshots
 
-![Home Page](./screenshot/home.png)
-![Footer](./footer/home.png)
+![Home Page](./screenshots/home.png)
+![Footer](./screenshots/footer.png)
 
 
 

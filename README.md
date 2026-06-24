@@ -1,18 +1,76 @@
-# React + Vite
+# 📰 Hamari-News
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive News Application built with **React.js**, **Vite**, and the **GNews API**. Users can search for the latest news on any topic and view articles in a clean, responsive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🔍 Search news by keyword
+* 📰 Displays the latest news articles
+* 🖼️ News image, title, description, and content
+* ⚡ Fast performance with Vite
+* 📱 Fully responsive design
+* 🎨 Modern and clean UI
+* ⏳ Loading indicator while fetching news
+* 🔒 API key secured using environment variables
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* React.js
+* Vite
+* JavaScript (ES6+)
+* Axios
+* CSS3
+* GNews API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```
+Hamari-News/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── News.jsx
+│   ├── News.css
+│   ├── Footer.css
+│   └── main.jsx
+│
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
+```
+
+---
+
+## 📸 Screenshots
+
+![Home Page](./screenshot/home.png)
+![Footer](./footer/home.png)
+
+
+
+## 🎯 Future Improvements
+
+* Dark Mode
+* Category-wise News
+* Bookmark Articles
+* Read More Button
+* Infinite Scroll
+* Pagination
+* Voice Search
+* Trending News Section
+
+## 👨‍💻 Author
+
+**Azim Bashar**
+
+Front-End Developer | React.js Enthusiast
+
+If you like this project, don't forget to ⭐ the repository.

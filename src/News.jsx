@@ -4,7 +4,6 @@ import './News.css'
 
 
 export default function News() {
-  const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
 
   const [data, setData] = useState([]);
   const [inp, setInp] = useState("Mumbai");
@@ -16,9 +15,9 @@ export default function News() {
     try {
       setLoading(true);
 
-      const res = await axios.get(
-        `https://gnews.io/api/v4/search?q=${inp}&lang=en&apikey=${API_KEY}`
-      );
+     const res = await axios.get(
+  `/.netlify/functions/gnews?q=${inp}`
+);
 
       setData(res.data.articles);
     } catch (error) {
